@@ -1,0 +1,21 @@
+Path for Apache (httpd):
+docker run -i -d -p 80 --name <new-container-name/existing> --mount source=<desired-volume-to-attach/path>,destination=</usr/local/apache2/htdocs> https:latest
+
+Path for Enginx:
+docker run -i -d -p 80 <new-container-name/existing> --mount source=<desired-volume-to-attach/path>,destination=</usr/share/enginx/html> enginx:latest
+
+Docker commands for Volumes:
+docker volume ls ~ lists all presents volumes
+docker volume create <volume-name> ~ creates a volume
+docker volume inspect <volume-name> ~ inspect a volume to find its DESTINATION PATH
+docker volume prune ~ removes unused volumes
+docker volume rm ~ delete a volume
+FOR MOUNTING:
+Named Volumes: --mount source=<>,destination=<>
+Bind mounts: -v <path of directory to be used as shared volume>:<path you want to reflect on container>
+
+
+Need to study-
+  backup and restore - volumes
+  docker compose
+  docker volume plugins
