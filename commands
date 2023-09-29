@@ -1,0 +1,87 @@
+To become a proficient developer and collaborate effectively on projects using Git, you should familiarize yourself with several fundamental Git commands. These commands will help you manage your codebase, work with branches, and collaborate with other developers. Here are some of the top Git commands you should know:
+
+git init: Initializes a new Git repository in the current directory.
+
+git clone: Copies a remote repository to your local machine.
+
+git add: Stages changes for commit. You can specify individual files or directories.
+
+Example:
+
+shell
+Copy code
+git add filename
+git commit: Records staged changes in the repository's history with a commit message.
+
+Example:
+
+shell
+Copy code
+git commit -m "Your commit message here"
+git status: Shows the current status of your working directory, including staged and unstaged changes.
+
+git log: Displays the commit history of the current branch.
+
+git branch: Lists all branches in the repository, and indicates which one you're currently on.
+
+Example:
+
+shell
+Copy code
+git branch
+git checkout: Switches to a different branch.
+
+Example:
+
+shell
+Copy code
+git checkout branch-name
+git merge: Combines changes from one branch into another branch.
+
+Example:
+
+shell
+Copy code
+git merge branch-name
+git pull: Fetches changes from a remote repository and merges them into your current branch.
+
+git push: Pushes your local commits to a remote repository.
+
+Example:
+
+shell
+Copy code
+git push origin branch-name
+git remote: Lists the remote repositories linked to your local repository.
+
+git fetch: Fetches changes from a remote repository but doesn't automatically merge them.
+
+git stash: Temporarily saves changes that are not ready to be committed, allowing you to switch branches or pull changes without committing incomplete work.
+
+git rebase: Reapplies your changes on top of another branch, often used for a cleaner commit history.
+
+Example:
+
+shell
+Copy code
+git rebase master
+git reset: Unstages changes or moves the current branch to a different commit.
+Example:
+
+shell
+Copy code
+git reset HEAD filename
+git tag: Creates and manages tags (usually for versioning releases).
+
+git remote add: Adds a new remote repository to your Git configuration.
+
+Example:
+
+shell
+Copy code
+git remote add upstream https://github.com/username/repo.git
+git remote remove: Removes a remote repository from your Git configuration.
+
+git cherry-pick: Applies a specific commit from one branch to another.
+
+These are some of the essential Git commands that will help you get started and work effectively as a developer. As you gain experience, you may explore more advanced Git techniques and commands to further enhance your workflow.
