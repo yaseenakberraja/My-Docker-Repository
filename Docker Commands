@@ -2,7 +2,7 @@ Path for Apache (httpd):
 docker run -i -d -p 80 --name <new-container-name/existing> --mount source=<desired-volume-to-attach/path>,destination=</usr/local/apache2/htdocs> httpd:latest
 
 Path for Enginx:
-docker run -i -d -p 80 <new-container-name/existing> --mount source=<desired-volume-to-attach/path>,destination=</usr/share/enginx/html> enginx:latest
+docker run -i -d -p 80 <new-container-name/existing> --mount source=<desired-volume-to-attach/path>,destination=</usr/share/nginx/html> enginx:latest
 
 Docker commands for Volumes:
 docker volume ls ~ lists all presents volumes
